@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bash Prompt Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <h3>Configuration</h3>
+
+    <label>User Color</label>
+    <select id="user"></select>
+
+    <label>Separator Text</label>
+    <input id="sep_text" value="@" />
+
+    <label>Separator Color</label>
+    <select id="sep_color"></select>
+
+    <label>Host Color</label>
+    <select id="host"></select>
+
+    <label>Path Color</label>
+    <select id="path"></select>
+
+    <label>Git Color</label>
+    <select id="git"></select>
+
+<label>Symbol Text</label>
+<input id="symbol_text" value="$" />
+
+<label>Symbol Color</label>
+<select id="symbol_color"></select>
+</div>
+
+<div class="right">
+    <h3>Live Preview</h3>
+    <div class="terminal-window">
+        <div id="preview"></div>
+    </div>
+
+    <h3>Bash Script (Add to .bashrc)</h3>
+    <textarea id="output" readonly></textarea>
+    <button id="copy">Copy Configuration</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
